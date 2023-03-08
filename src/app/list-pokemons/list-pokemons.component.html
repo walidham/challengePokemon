@@ -1,4 +1,11 @@
 <h1>List of pokemon</h1>
+<div>
+  <mat-form-field color='primary' id='search-input' class='full-width' appearance='outline'>
+    <mat-label color='red'>Search</mat-label>
+    <input #searchBar matInput  [(ngModel)]='searchValue' name='searchBar' [value]='searchValue'
+           (keyup)='search($event)'>
+  </mat-form-field>
+</div>
 <div class="mat-elevation-z8">
   <table mat-table [dataSource]="dataSource">
     <!-- Name Column -->
