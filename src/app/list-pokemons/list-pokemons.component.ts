@@ -24,11 +24,12 @@ export class ListPokemonsComponent implements OnInit {
       const api = new PokemonClient();
 
       await api
-        .listPokemons()
+        .listPokemons(1,200)
         .then((data) => {
           this.ELEMENT_DATA = data.results;
           console.table(data.results)
           this.dataSource = new MatTableDataSource<NamedAPIResource>(this.ELEMENT_DATA);
+          this.dataSource.paginator = this.paginator;
         })
         .catch((error) => console.error(error));
     })();
