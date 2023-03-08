@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatTableModule} from "@angular/material/table";
 import { PokemonComponent } from './pokemon/pokemon.component';
+import { ListPokemonsComponent } from './list-pokemons/list-pokemons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PokemonComponent
+    PokemonComponent,
+    ListPokemonsComponent
   ],
   imports: [
     BrowserModule,

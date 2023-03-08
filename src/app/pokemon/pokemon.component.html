@@ -1,1 +1,15 @@
-<p>pokemon works!</p>
+<h1>Aibilities</h1>
+<table class="mat-elevation-z8" >
+  <tr>
+    <td>name</td>
+    <td>url</td>
+    <td>is_hidden</td>
+    <td>slot</td>
+  </tr>
+  <tr *ngFor="let a of pokemon.abilities">
+    <td>{{a.ability.name}}</td>
+    <td>{{a.ability.url}}</td>
+    <td>{{a.is_hidden}}</td>
+    <td>{{a.slot}}</td>
+  </tr>
+</table>
