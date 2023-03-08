@@ -1,6 +1,6 @@
 <h1>Aibilities</h1>
 <h2>Base experience :{{pokemon.base_experience}} </h2>
-
+<h2>weight : {{pokemon.weight}}</h2>
 <table class="mat-elevation-z8" >
   <tr>
     <td>name</td>
@@ -14,22 +14,18 @@
     <td>{{a.is_hidden}}</td>
     <td>{{a.slot}}</td>
   </tr>
+
 </table>
 
-<h1>Aibilities</h1>
+<h1>Forms</h1>
 <table class="mat-elevation-z8" >
   <tr>
     <td>name</td>
     <td>url</td>
-    <td>is_hidden</td>
-    <td>slot</td>
-  </tr>
-  <tr *ngFor="let a of pokemon.abilities">
-    <td>{{a.ability.name}}</td>
-    <td>{{a.ability.url}}</td>
-    <td>{{a.is_hidden}}</td>
-    <td>{{a.slot}}</td>
-
 
   </tr>
+  <tr *ngFor="let a of pokemon.forms">
+    <td>{{a.name}}</td>
+    <td>{{a.url}}</td>
+    </tr>
 </table>
