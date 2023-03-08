@@ -8,6 +8,8 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatTableModule} from "@angular/material/table";
 import { PokemonComponent } from './pokemon/pokemon.component';
 import { ListPokemonsComponent } from './list-pokemons/list-pokemons.component';
+import {FormsModule} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { ListPokemonsComponent } from './list-pokemons/list-pokemons.component';
     BrowserAnimationsModule,
     MatPaginatorModule,
     MatTableModule,
+    FormsModule,
+    MatInputModule,
 
   ],
   providers: [],
